@@ -52,5 +52,5 @@ Ensure that your UI meets the following criteria:
 
 ## Bonus tasks
 
-* Make each card clickable. Upon clicking a card, the browser should open the link for the article.
+* Make each of the cards clickable. Upon clicking a card, the browser should open the link for the article.
 * Make each bookmark component clickable. Upon clicking a bookmark, the bookmark icon should turn green. Clicking the bookmark again will reset to the original state (no color).
