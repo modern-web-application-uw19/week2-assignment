@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PostData from '../data/your-articles.json';
 import Author from './Author';
+import '../styles/author.css';
 
 class PostList extends Component {
   render() {
@@ -8,8 +9,9 @@ class PostList extends Component {
       <div >
         <h3>For you</h3>
         {PostData.map((postDetail, index)=>{
-            return<div>
-                <img src={postDetail.image} alt="img"></img>
+            return<div className="Columns">
+            <div className="PostCard">
+                <img src={postDetail.image} alt="img" className="PostCardImage"></img>
                 <h2>{postDetail.title}</h2>
                 <p>{postDetail.description}</p>
                 
@@ -20,6 +22,7 @@ class PostList extends Component {
                   postedDate={postDetail.postedDate}
                   minutesToRead={postDetail.minutesToRead}
                 />
+                </div>
                 </div>
         })}
        
