@@ -33,25 +33,33 @@
 }
 
 /***************************************/
-.CardRight {
+.Tab{margin-left: 80px;}
+.Card {
   height: 220px;
   width: 40%;
-  background-color: rgb(214, 237, 240);
-  border: 1px solid rgb(241, 235, 235);
-  margin-left: 20px;
+  background-color: white;
+  border: 1px solid rgb(201, 195, 195);
+  margin-left: 80px;
   margin-top: 10px;
   margin-right: 20px;
   float: left;
 }
-.CardLeft {
-  height: 220px;
-  width: 40%;
-  background-color: rgb(214, 237, 240);
-  border: 1px solid rgb(241, 235, 235);
-  margin-left: 20px;
+.MissedCard{
+  
+  height: 300px;
+  width: 25%;
+  background-color: white;
+  border: 1px solid rgb(201, 195, 195);
+  margin-left: 80px;
   margin-top: 10px;
-  margin-right: 20px;
-  float: right;
+  margin-right: 10px;
+  float: left;
+}
+.MyMissedImage{
+  
+  width:339px;
+  height:100px;
+  
 }
 .MyImage{
   float: left;
@@ -69,4 +77,7 @@
 .Ribbon-logo {
   height: 3vmin;
   
+}
+.black{
+  background-color: white;
 }
