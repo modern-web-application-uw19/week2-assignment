@@ -1,0 +1,42 @@
+.section-header {
+  margin: 5px;
+  width: 1000px;
+  border-bottom: 1px;
+  border-color: lightgray;
+  border-style: none none solid none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;;
+  width: 1000px;
+}
+
+.card {
+  margin: 5px;
+  border: 1px solid lightgray;
+  flex: 0 0 488px;
+  height: 200px;
+}
+
+.card-image {
+  height: 100%;
+  width: 40%;
+  object-fit: cover;
+  float: left;
+}
+
+.card-body {
+  margin: 10px 10px 10px calc(40% + 10px);
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-description {
+  color: gray;
+  font-size: 0.9em;
+}
