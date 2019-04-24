@@ -1,1 +1,35 @@
+#root {
+  width:900px;
+  margin:0 auto;
+}
+
+h1 {
+  height:1em;
+  padding:1em 0;
+  border-bottom:1px solid grey;
+}
+
+#foryou .cardHolder { display:flex; flex-direction:row; justify-content:space-between; align-items:flex-start; flex-wrap:wrap }
+#foryou .card { border:1px solid #d3d3d3; width:370px; height:225px; display: flex; flex-direction: row; justify-content: space-between;
+  align-content: flex-start; margin-bottom:20px; padding-right:5px; }
+#foryou .cardTitle { font-weight: bold; text-decoration: none; color:black; }
+#foryou .cardContent { display:flex; flex-direction: column; justify-content: space-between; }
+#foryou img { width:125px; margin-right:5px; }
+#foryou .authorInfo { margin-bottom:5px; }
+#foryou .authorInfo img { float: left; width:50px; height:50px; border-radius: 25px; }
+#foryou .bookmark { float:right; }
+
+#missed .cardHolder { display:flex; flex-direction:row; justify-content:space-between; align-items:flex-start; flex-wrap: wrap; }
+#missed .card { border:1px solid #d3d3d3; width:275px; height:275px; margin-bottom:20px; display:flex; flex-direction:column; }
+#missed .cardTitle { font-weight: bold; text-decoration: none; color:black; }
+#missed .cardContent { height:157px; padding-left:5px; }
+#missed .upper { height:102px; }
+#missed img { width:275px; height:118px; object-fit: cover; }
+#missed .authorInfo { margin-top:auto; height:50px; margin-bottom:5px; }
+#missed .authorInfo img { float: left; width:50px; height:50px; border-radius: 25px; margin-right:5px; }
+#missed .bookmark { float:right; }
+
+.bookmark { border:2px solid black; width:20px; height:20px; margin-right:5px; }
+.bookmark.on { background-color:green; }
+.bookmark.off { background-color:white; }
 
