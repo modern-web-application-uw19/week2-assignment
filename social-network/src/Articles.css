@@ -1,0 +1,22 @@
+div.container {
+  padding: 80px;
+}
+
+h1.articleSectionHeader {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+div.yourArticles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+div.missedArticles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(1, 1fr);
+}

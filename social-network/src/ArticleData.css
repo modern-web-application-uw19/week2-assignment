@@ -1,0 +1,103 @@
+.yourArticleWrapper {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: repeat(3, 1fr);
+  border: 1px solid #DCDCDC;
+}
+
+img.yourArticleImg {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  grid-column: 1;
+  grid-row: 1 / span 3;
+}
+
+
+h1.yourArticleTitle {
+  font-size: 15px;
+  grid-column: 2 / span 3;
+  grid-row: 1;
+}
+
+p.yourArticleDesc {
+  font-size: 10px;
+  color: #424949;
+  grid-column: 2 / span 3;
+  grid-row: 2;
+}
+
+img.yourAuthorImg {
+  max-width: 50px;
+  grid-column: 2;
+  grid-row: 3;
+  justify-self: end;
+}
+
+div.yourArticleInfo {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+h2.yourAuthorName {
+  font-size: 12px;
+}
+
+p.yourArticleDetails {
+  font-size: 10px;
+  color: #424949
+}
+
+.missedArticleWrapper {
+  padding: 10px;
+  display: grid;
+  grid-auto-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: repeat(4, 1fr);
+  border: 1px solid #DCDCDC;
+}
+
+img.missedArticleImg {
+  width: 300px;
+  height: 100px;
+  object-fit: cover;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+
+h1.missedArticleTitle {
+  font-size: 15px;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+p.missedArticleDesc {
+  font-size: 10px;
+  color: #424949;
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+img.missedAuthorImg {
+  max-width: 50px;
+  grid-column: 1;
+  grid-row: 4;
+  justify-self: center;
+}
+
+div.missedArticleInfo {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+h2.missedAuthorName {
+  font-size: 12px;
+}
+
+p.missedArticleDetails {
+  font-size: 10px;
+  color: #424949
+}
