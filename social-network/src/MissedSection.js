@@ -1,22 +1,34 @@
 import React from 'react';
+import CardDeck from 'react-bootstrap/CardDeck'
 
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
-import CardDeck from 'react-bootstrap/CardDeck';
+import missedArticles from './missed-articles.json';
 import ArticleCard from './ArticleCard';
 
 export default class MissedSection extends React.Component {
-    render() {
-        return(
-            <div id="MissedSection">
-                <Tabs id="MissedTab">
-                    <Tab eventKey="Missed" title="In case you missed it"></Tab>                    
-                </Tabs>
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            articles : missedArticles,
+            imgTop : true
+        };
+    }
+
+    render() {        
+        const articleCards = this.state.articles
+                                .map((article, idx) => {
+                                    return (
+                                        <ArticleCard article={article} imgTop={this.state.imgTop} key={idx}/>
+                                    );
+                                });
+        
+        return(            
+            <div id="MissedSection">                
+                <h5 style= {{borderBottom : "1px solid rgb(125, 125, 125)", padding: 20}}>In case you missed it</h5>
+                
                 <CardDeck>
-                    <ArticleCard />
-                    <ArticleCard />
-                    <ArticleCard />
-                </CardDeck>
+                    {articleCards}                    
+                </CardDeck>                
             </div>
         );
     }

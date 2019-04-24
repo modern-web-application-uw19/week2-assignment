@@ -1,35 +1,76 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
+import PropTypes from 'prop-types';
 
 export default class ArticleCard extends React.Component {
+    static propTypes = {
+        article : PropTypes.object,
+        imgTop : PropTypes.bool
+    }
+
     render() {
-        return (
+        const date = new Date(this.props.article.postedDate);
+        const forYouStyle= {
+            width: 39 + 'rem',
+            height: 20 + 'rem',
+            marginTop:'2rem',
+            marginLeft:'2rem',
+            display: 'flex',
+            flexDirection: "row"
+        };
+
+        const forYouImgStyle= {
+            width : 15 + 'rem', 
+            objectFit: 'cover'
+        }
+
+        const forYouBodyStyle= {
+            width: 15 + 'rem',
+            display: 'flex',
+            flexDirection: 'column'
+        }
+
+        const missingStyle= {
+            width: 25 + 'rem',
+            height: 22 + 'rem',
+            marginTop:'2rem',
+            marginLeft:'2rem',
+            display: 'flex',
+            flexDirection: "column"
+        }
+
+        const missingImgStyle= {
+            width: 25 + 'rem',
+            height: 7 + 'rem',
+            objectFit: 'cover'
+        }
+
+        const missingBodyStyle= {
+            width: 25 + 'rem',            
+        }
+        
+        return (            
             <div id="ArticleCard">
-                <Card style={{ width: 35 + 'rem', height: 20 + 'rem',  marginTop:'2rem', marginLeft:'2rem', marginBottom:'2rem', display: 'flex', flexDirection: 'row', flex: 1}}>
-                    <Card.Img style={{ width : 15 + 'rem', objectFit: 'cover'}}src="https://cdn-images-1.medium.com/max/800/1*PIC-U670COEqmGwt4cvXAA.jpeg" />
-                    <Card.Body style= {{ width: 15 + 'rem' }}>
-                        
-                        <Card.Title>The 7 Habits of Highly Creative People</Card.Title>                       
+                
+                <Card style={this.props.imgTop ? missingStyle : forYouStyle}>
+                    <Card.Img style={this.props.imgTop ? missingImgStyle : forYouImgStyle} src={this.props.article.image} />
+                    <Card.Body style={this.props.imgTop ? missingBodyStyle : forYouBodyStyle}>
+                    <Card.Body>                        
+                        <Card.Title>{this.props.article.title}</Card.Title>                       
                         <Card.Text>
-                            "What a good artist understands is that nothing comes from nowhere. Nothing is completely original."
+                            {this.props.article.description}
                         </Card.Text>
-                        <br />
-                        <br />            
-                        <div>
-                            <p style={{float: "left"}}>
-                                <Image src="https://cdn-images-1.medium.com/fit/c/80/80/1*NGHEMBPNbIQmmAkvCjaspA.jpeg" fluid thumbnail roundedCircle />
-                            </p>
-                            <p>
-                                <Card.Text>
-                                    Louis Chew
-                                </Card.Text>
-                                <Card.Text>
-                                    Apr 4 . 8 min read
-                                </Card.Text>
-                            </p>
-                        </div>
-                       
+                    </Card.Body>
+                    <div>
+                        <Image src={this.props.article.author.image} fluid thumbnail roundedCircle style={{float: "left"}}/>                        
+                        <Card.Text>
+                            {this.props.article.author.name}
+                        </Card.Text>
+                        <Card.Text>
+                            {date.toLocaleString('en-us', { month: 'short'})} {date.getDate()} . {this.props.article.minutesToRead} min read
+                        </Card.Text>                        
+                    </div>
                     </Card.Body>
                 </Card>
             </div>

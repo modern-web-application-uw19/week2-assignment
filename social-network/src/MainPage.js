@@ -7,7 +7,7 @@ export default class MainPage extends React.Component {
         return(
             <div id="MainPage">
                 <ForYouSection />
-                <MissedSection />
+                <MissedSection />  
             </div>
        );
    }

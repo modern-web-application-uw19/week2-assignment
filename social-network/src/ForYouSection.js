@@ -8,21 +8,35 @@ import yourArticles from './your-articles.json';
 import ArticleCard from './ArticleCard';
 
 export default class ForYouSection extends React.Component {
-    render() {
-        console.log(yourArticles);
+    constructor(props)
+    {
+        super(props);
+        this.state = {
+            articles : yourArticles,
+            imgTop : false
+        };
+    }
+
+    render() {        
+        const articleCards = this.state.articles
+                                .map((article, idx) => {
+                                    return (
+                                        <ArticleCard article={article} imgTop={this.state.imgTop} key={idx}/>
+                                    );
+                                });
+        
         return(            
             <div id="ForYouSection">                
-                <Tabs id="ForYouTabs">
-                    <Tab eventKey="ForYou" title="ForYou"></Tab>                    
-                </Tabs>
+                <h5 style= {{borderBottom : "1px solid rgb(125, 125, 125)", padding: 20}}>For You</h5>
+                
                 <CardDeck>
-                    <ArticleCard />
-                    <ArticleCard />
+                    {articleCards[0]}
+                    {articleCards[1]}                    
                 </CardDeck>
                 <CardDeck>
-                    <ArticleCard />
-                    <ArticleCard />
-                </CardDeck>
+                    {articleCards[2]}
+                    {articleCards[3]}                    
+                </CardDeck>                
             </div>
         );
     }
