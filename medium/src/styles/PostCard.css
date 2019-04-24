@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+  }
+
+.Columns {
+    float: left;
+    width: 50%;
+    padding: 8px;
+}
+.PostCard {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+.PostCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.PostCardImage {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+}
+.PostCardContent {
+    padding: 10px 15px;
+}
+
+.RoundLine {
+    border: 2px solid teal;
+    padding: 5px;
+    border-radius: 60px;
+    width: 60px;
+    height: 60px;
+  }

@@ -1,55 +1,55 @@
-h3 {
-    text-align: left;
-    padding-bottom: 20px;
-    border-bottom: 1px solid black;
-    width: 800px;
-}
+.Container {
+    /* padding: 16px; */
+    margin: 10px 0
+  }
+  
+  .Container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .Container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  .Container span {
+    font-size: 14px;
+    margin: 0 10px 0 0;
+  }
+  .Container p {
+    font-size: 14px;
+  }
+  
+  @media (max-width: 500px) {
+    .Container {
+        text-align: left;
+    }
+    .Container img {
+        margin: auto;
+        float: none;
+        display: block;
+    }
+  }
 
-.Columns {
-    float: left;
-    width: 50%;
-    padding: 8px;
-}
-.PostCard {
-    border: 1px solid #eee;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-.PostCardImage {
-    width: 100%;
-}
-      
-  
-  /* .Card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 40%;
-    border-radius: 5px;
-    float: left;
-  width: 33.3%;
-  padding: 8px;
-  }
-  
-  .Card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  .CardImage {
-    width: 100%;
-  }
-  
-  .Container {
-    padding: 2px 16px;
-  } */
-.AuthorComponent {
-    display: flex;
-    align-content: flex-start;
-}
 .RoundLine {
     border: 2px solid teal;
     padding: 5px;
     border-radius: 60px;
     width: 60px;
+    height: 60px;
   }
+  .bookmark {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black; 
+    margin: 0 auto; 
+    cursor: pointer; 
+   }
+   
+   .bookmark--green {
+    background-color: green; 
+   }
