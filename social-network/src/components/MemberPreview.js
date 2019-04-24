@@ -1,5 +1,5 @@
 import React from 'react';
-import audioIcon from '../assets/Speaker_Icon.svg';
+import star from '../assets/star.svg';
 
 class AudioAvailable extends React.Component {
   constructor(props) {
@@ -9,8 +9,8 @@ class AudioAvailable extends React.Component {
   render() {
     return (
         <span className="audio-avail">
-          <img src={ audioIcon } alt="Listen to this article"/>
-          Audio Available
+          <img src={ star } alt="Member preview"/>
+          Member preview
         </span> 
     )
   }

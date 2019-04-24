@@ -1,30 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-xmlns:dc="http://purl.org/dc/elements/1.1/"
-xmlns:cc="http://web.resource.org/cc/"
-xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-xmlns:svg="http://www.w3.org/2000/svg"
-xmlns="http://www.w3.org/2000/svg"
-xml:space="preserve"
-version="1.0"
-id="layer1"
-width="400pt" height="400pt"
-viewBox="0 0 75 75"><metadata
-id="metadata1"><rdf:RDF><cc:Work
-rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><g
-id="g1"><polygon
-id="polygon1"
-points="39.389,13.769 22.235,28.606 6,28.606 6,47.699 21.989,47.699 39.389,62.75 39.389,13.769"
-style="stroke:#111111;stroke-width:5;stroke-linejoin:round;fill:#111111;"
-/><path id="path1"
-d="M 48.128,49.03 C 50.057,45.934 51.19,42.291 51.19,38.377 C 51.19,34.399 50.026,30.703 48.043,27.577"
-style="fill:none;stroke:#111111;stroke-width:5;stroke-linecap:round"/>
-<path id="path2"
-d="M 55.082,20.537 C 58.777,25.523 60.966,31.694 60.966,38.377 C 60.966,44.998 58.815,51.115 55.178,56.076"
-style="fill:none;stroke:#111111;stroke-width:5;stroke-linecap:round"/>
-<path id="path1"
-d="M 61.71,62.611 C 66.977,55.945 70.128,47.531 70.128,38.378 C 70.128,29.161 66.936,20.696 61.609,14.01"
-style="fill:none;stroke:#111111;stroke-width:5;stroke-linecap:round"/>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="253px" height="289px" viewBox="0 0 253 289" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54 (76480) - https://sketchapp.com -->
+    <title>Speaker_Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Speaker_Icon" transform="translate(14.000000, 13.333333)" stroke="#111111" stroke-width="26.6666667">
+            <polygon id="polygon1" fill="#111111" fill-rule="nonzero" stroke-linejoin="round" points="137 0.666666667 66.6146036 79.7270574 0 79.7270574 0 181.465956 65.6052293 181.465956 137 261.666667"></polygon>
+            <path d="M172.351128,187.666667 C180.31967,171.214702 185,151.856011 185,131.057241 C185,109.91838 180.191611,90.2780497 172,73.6666667" id="path1" stroke-linecap="round"></path>
+            <path d="M201,35.6666667 C216.07138,62.323016 225,95.314659 225,131.043577 C225,166.441027 216.226377,199.143973 201.39157,225.666667" id="path2" stroke-linecap="round"></path>
+        </g>
+    </g>
 </svg>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactCompnent as BookmarkIcon } from '../assets/bookmark.svg';
+import bookmarkIcon from '../assets/bookmark.svg';
 
 class Bookmark extends React.Component {
   constructor(props) {
@@ -9,21 +9,13 @@ class Bookmark extends React.Component {
     };
   }
 
-  bookmarkArticle = event => {
-    if (this.state.isBookmarked === false) {
-      this.state.isBookmarked === true;
-    } else {
-      this.state.isBookmarked === false;
-    }
-  }
-  
   render() {
     return (
-      <div>
         <button>
-          <BookmarkIcon />
+          <img src={ bookmarkIcon } alt="Bookmark This Article"/>
         </button>
-      </div>
     )
   }
 }
+
+export default Bookmark;
