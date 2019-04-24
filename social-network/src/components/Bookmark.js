@@ -1,4 +1,5 @@
 import React from 'react';
+import './Bookmark.css';
 import bookmarkIcon from '../assets/bookmark.svg';
 
 class Bookmark extends React.Component {
@@ -11,7 +12,7 @@ class Bookmark extends React.Component {
 
   render() {
     return (
-        <button>
+        <button className="bookmark">
           <img src={ bookmarkIcon } alt="Bookmark This Article"/>
         </button>
     )

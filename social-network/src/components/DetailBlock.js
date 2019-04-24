@@ -9,7 +9,7 @@ class DetailBlock extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className={`d-flex`}>
         <Avatar 
           src={ this.props.article.author.image } 
           isMember={ this.props.article.author.isMediumMember } 

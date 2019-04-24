@@ -1,4 +1,5 @@
 import React from 'react';
+import './SectionHeader.css';
 
 class SectionHeader extends React.Component {
   constructor(props) {
@@ -7,8 +8,8 @@ class SectionHeader extends React.Component {
 
   render() {
     return (
-      <div>
-        <h2 className="sectionHeader">{this.props.title}</h2>
+      <div className="sectionHeader">
+        <h2 className="sectionHeader__text">{this.props.title}</h2>
       </div>
     )
   }

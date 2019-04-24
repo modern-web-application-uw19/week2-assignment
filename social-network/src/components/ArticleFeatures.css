@@ -1,0 +1,16 @@
+.article__features {
+  display: flex;
+  align-items: center;
+  color: rgba(0,0,0,.54);
+  justify-content: space-between;
+}
+.article__features span {
+  display: flex;
+  align-items: center;
+}
+.article__features img:first-child {
+  height: 15px;
+  width: 15px;
+  opacity: .54;
+  margin: 0 8px 0 0;
+}
