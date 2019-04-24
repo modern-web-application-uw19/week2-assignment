@@ -1,0 +1,149 @@
+img { width: 100%; height: auto; }
+
+a { 
+  text-decoration: none; 
+  color: black;
+}
+
+#allArticles {
+  margin: 40px;
+}
+
+h2 {
+  font-size: 1.8em;
+  border-bottom: 1px solid #ccc;
+}
+
+h2 span {
+  border-bottom: 1px solid #666;
+}
+
+#yourArticles, #missedArticles {
+  display: grid;
+}
+
+#yourArticles {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+#missedArticles {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.article {
+  border: 1px solid #ccc;
+}
+
+#yourArticles .article a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  padding-right: 20px;
+}
+
+#yourArticles .articleImage {
+  grid-column: 1;
+  grid-row: 1 / span 4;
+  margin-right: 2em;
+}
+
+#yourArticles .articleImage img {
+  object-fit: cover;
+  width: 200px;
+  height: 250px;
+}
+
+#missedArticles .articleImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+#missedArticles .title, #missedArticles .description { margin-bottom: 10px; }
+
+#yourArticles .audioPreview, #yourArticles .title, #yourArticles .description, #yourArticles .authorInfoMeta {
+  grid-column: 2;
+}
+
+.audioPreview {
+  font-size: 0.8em;
+  margin-top: 10px;
+}
+
+.audioPreview img {
+  width: 10px; 
+  height: 10px;
+}
+
+.audioPreview .audio { margin-right: 20px;  }
+
+#missedArticles .audioPreview {
+  padding: 10px 10px 0;
+}
+
+.authorInfoMeta {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.authorImage {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+
+.authorImage img { 
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.authorImage img.mediumMember {
+  border: 1px solid teal;
+}
+
+.authorInfoMeta .authorName {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+}
+
+.authorInfoMeta .meta {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.authorInfoMeta .authorName, .authorInfoMeta .meta {
+  font-size: 0.8em;
+}
+
+.article .title {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.article .description {
+  font-size: 0.8em;
+}
+
+#missedArticles .article .title, #missedArticles .article .description, #missedArticles .authorInfoMeta {
+  padding: 0 10px;
+}
+
+#missedArticles .authorInfoMeta { padding-bottom: 20px; }
+
+/* Still to do:
+===============
+
+Tests
+
+*/
