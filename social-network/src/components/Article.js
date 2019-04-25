@@ -4,16 +4,12 @@ import ArticleImage from './ArticleImage';
 import Summary from './Summary';
 import DetailBlock from './DetailBlock';
 import './ArticleImage.css';
+import PropTypes from 'prop-types';
 
 
 class Article extends React.Component {
   constructor(props) {
     super(props);
-    this.openArticle = this.openArticle.bind(this);
-  }
-
-  openArticle() {
-    window.open(this.props.article.link, '_blank');
   }
 
   render() {
@@ -31,6 +27,11 @@ class Article extends React.Component {
       </div>
     )
   }
+}
+
+Article.propTypes = {
+  article: PropTypes.object,
+  articleType: PropTypes.string
 }
 
 export default Article;

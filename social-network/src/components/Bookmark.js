@@ -1,6 +1,7 @@
 import React from 'react';
 import './Bookmark.css';
 import bookmarkIcon from '../assets/bookmark.svg';
+import PropTypes from 'prop-types';
 
 class Bookmark extends React.Component {
   constructor(props) {

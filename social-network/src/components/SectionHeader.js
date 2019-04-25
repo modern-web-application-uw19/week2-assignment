@@ -1,5 +1,6 @@
 import React from 'react';
 import './SectionHeader.css';
+import PropTypes from 'prop-types';
 
 class SectionHeader extends React.Component {
   constructor(props) {
@@ -13,6 +14,10 @@ class SectionHeader extends React.Component {
       </div>
     )
   }
+}
+
+SectionHeader.propTypes = {
+  title: PropTypes.string
 }
 
 export default SectionHeader;

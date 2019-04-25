@@ -1,10 +1,18 @@
 import React from 'react';
 import ArticleFeatures from './ArticleFeatures';
+import PropTypes from 'prop-types';
 
 class Summary extends React.Component {
   constructor(props) {
     super(props);
   }
+  static propTypes = {
+    article: PropTypes.shape({
+        title: PropTypes.string,
+        description: PropTypes.string
+    })
+  }
+
 
   render() {
     return (
@@ -15,6 +23,13 @@ class Summary extends React.Component {
       </div>
     );
   }
+}
+
+Summary.propTypes = {
+  article: PropTypes.shape({
+    title: PropTypes.string,
+    description: PropTypes.string
+  })
 }
 
 export default Summary;

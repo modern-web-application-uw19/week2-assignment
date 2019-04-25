@@ -2,6 +2,7 @@ import React from 'react';
 import ArticleDetails from './ArticleDetails';
 import Avatar from './Avatar';
 import Bookmark from './Bookmark';
+import PropTypes from 'prop-types';
 
 class DetailBlock extends React.Component {
   constructor(props) {
@@ -25,4 +26,7 @@ class DetailBlock extends React.Component {
   }
 }
 
+DetailBlock.propTypes = {
+  article: PropTypes.object
+}
 export default DetailBlock;

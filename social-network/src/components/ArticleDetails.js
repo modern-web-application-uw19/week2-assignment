@@ -1,5 +1,6 @@
 import React from 'react';
 import './ArticleDetails.css';
+import PropTypes from 'prop-types';
 
 class ArticleDetails extends React.Component {
   constructor(props) {
@@ -16,6 +17,12 @@ class ArticleDetails extends React.Component {
         </div>
     )
   }
+}
+
+ArticleDetails.propTypes = {
+  name: PropTypes.string,
+  date: PropTypes.string,
+  toRead: PropTypes.number
 }
 
 export default ArticleDetails;

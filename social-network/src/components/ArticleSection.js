@@ -1,12 +1,11 @@
 import React from 'react';
 import SectionHeader from './SectionHeader';
 import Article from './Article';
+import PropTypes from 'prop-types';
 
 class ArticleSection extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-    };
   }
 
   render() {
@@ -27,4 +26,10 @@ class ArticleSection extends React.Component {
   }
 }
 
+ArticleSection.propTypes = {
+  articles: PropTypes.array,
+  articleType: PropTypes.string,
+  sectionTitle: PropTypes.string
+
+}
 export default ArticleSection;

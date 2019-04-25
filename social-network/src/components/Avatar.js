@@ -1,6 +1,7 @@
 import React from 'react';
 import './Avatar.css';
 import halo from '../assets/halo.svg';
+import PropTypes from 'prop-types';
 
 class Avatar extends React.Component {
   constructor(props) {
@@ -18,6 +19,11 @@ class Avatar extends React.Component {
 
     )
   }
+}
+
+Avatar.propTypes = {
+  src: PropTypes.string,
+  isMember: PropTypes.bool
 }
 
 export default Avatar;
