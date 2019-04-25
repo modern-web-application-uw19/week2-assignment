@@ -110,16 +110,16 @@ img {
 .datePosted {
   grid-column: 2;
   grid-row: 2;
-  font-size: 0.7em;
+  font-size: 0.5em;
 }
 
-.articleInfo .meta {
+.articleInfo .datePosted {
   grid-column: 2;
   grid-row: 2;
 }
 
-.articleInfo .authorName, .articleInfo .meta {
-  font-size: 0.9em;
+.articleInfo .authorName, .articleInfo .datePosted {
+  font-size: 0.7em;
 }
 
 .article .title {
@@ -128,5 +128,5 @@ img {
 }
 
 .article .articleDescription {
-  font-size: 0.9em;
+  font-size: 1em;
 }
