@@ -33,7 +33,7 @@ Author.propTypes = {
     image: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     isMediumMember: PropTypes.bool.isRequired
-  }),
+  }).isRequired,
   postedDate: PropTypes.string.isRequired,
   minutesToRead: PropTypes.number.isRequired
 }

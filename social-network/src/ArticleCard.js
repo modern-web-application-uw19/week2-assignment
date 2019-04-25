@@ -28,9 +28,9 @@ ArticleCard.propTypes = {
     author: PropTypes.shape({
       image: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired
-    }),
+    }).isRequired,
     postedDate: PropTypes.string.isRequired,
     minutesToRead: PropTypes.number.isRequired
-  }),
+  }).isRequired,
   layout: PropTypes.string.isRequired,
 }

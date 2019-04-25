@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import ArticleCard from './ArticleCard';
 import SectionHeader from './SectionHeader.js';
 
@@ -13,4 +14,18 @@ export default class ArticlesPanel extends React.Component {
       </div>
     </div>;
   }
+}
+
+ArticlesPanel.propTypes = {
+  articles: PropTypes.arrayOf(PropTypes.shape({
+    image: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    author: PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired
+    }),
+    postedDate: PropTypes.string.isRequired,
+    minutesToRead: PropTypes.number.isRequired
+  })).isRequired
 }
