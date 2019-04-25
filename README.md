@@ -1,56 +1,68 @@
-# Assignment 2
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Getting Started
+## Available Scripts
 
-1. Fork this repository and clone the code to your machine.
-2. Setup your application
-   ```bash
-   # Make sure you run this command inside the week2 folder. Check via `pwd`
-   # Not doing so may cause the create-react-app command to fail
-   pwd
-   # /path/to/week2
-   create-react-app social-network
-   ```
-3. Ensure you can run your dev server
-   ```bash
-   cd social-network
-   npm start
+In the project directory, you can run:
 
-   # or if you're using yarn
-   cd social-network
-   yarn start
-   ```
+### `npm start`
 
-## Overview
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-For this assignment, you'll be creating a social network UI using React. We're going to focus on creating the UI elements for now, but the "Extras" section has additional tasks you can try out to add some interactive elements.
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-### Requirements
+### `npm test`
 
-Recreate the provided screenshot from https://medium.com/topic/creativity.
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-![Medium screenshot](medium.jpeg)
+### `npm run build`
 
-Ensure that your UI meets the following criteria:
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-* Renders the provided data using React components.
-    * Copy the JSON files in the `_data` folder into your project folder. Import them into a component like so (path may vary):
-      ```js
-      import missedArticles from './missed-articles.json';
-      ```
-* Uses React components that...
-    * Are modular/reusable. For example, an author's bio could be considered a modular and reusable component on this page.
-    * Use the appropriate loops/conditionals to map and display components.
-    * Use propTypes to define props.
-* Looks fairly close to the original screenshot.
-    * Focus more on the React components first, then follow up with styling. More emphasis will be placed on the JavaScript code.
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
-## Submission
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-1. In order for a valid submission, your app should run and display a UI when running `npm start`.
-2. Create a pull request to this repository. There will be no CI.
+### `npm run eject`
 
-## Bonus tasks
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-* Make each card clickable. Upon clicking a card, the browser should open the link for the article.
-* Make each bookmark component clickable. Upon clicking a bookmark, the bookmark icon should turn green. Clicking the bookmark again will reset to the original state (no color).
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
