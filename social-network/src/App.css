@@ -1,0 +1,154 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  display: flex; 
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+
+.item {
+  border: 1px solid rgb(207, 201, 201);
+  margin: 5px;
+  height: 250px;
+  width: 430px;
+  position: relative;
+  display: flex;
+}
+
+.item-picture-vertical {
+  float: left;
+  height: 240px; 
+  width: 200px;
+  margin: 5px;
+}
+
+.item-picture-horizontal {
+  height: 130px; 
+  width: 280px;
+  margin: 5px;
+  position: relative;
+  object-fit: cover;
+}
+
+.item-body-vertical {
+  position: relative;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+}
+
+.item-body-horizontal {
+  position: relative;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.item-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.item-description {
+  font-size: smaller;
+  color: gray;
+  margin: 5px;
+}
+
+
+.author {
+  margin: 5px;
+  margin-top: auto;
+  width: 100%;
+}
+
+.author-name {
+  font-weight: bold;
+}
+
+.author-picture {
+  float: left;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+
+.author-picture-frame {
+  float: left;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+  border: 1px solid teal;
+}
+
+.author-body {
+  font-size: small;
+  margin: 5px;
+}
+
+.author-date {
+  color: gray;
+}
+
+
+.bookmark {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  margin: 0 auto;
+  cursor: pointer;
+  float: right;
+ }
+ 
+ .bookmark--green {
+  background-color: green;
+ }
+
+ .sub-header {
+  color: gray;
+  font-size: smaller;
+  margin-bottom: 5px;
+ }
+
+ .section-header {
+  border-bottom: 1px solid black;
+  text-align: left;
+  margin-left: 10px;
+ }
