@@ -1,0 +1,98 @@
+.App {
+  text-align: left;
+  border-bottom: solid 1px grey;
+  max-width: 1200px;
+  margin-left: 30px;
+}
+
+/* CSS Styles for ForYou section */
+.container{
+  display: flex;
+  /* border: solid 1px red; */
+}
+.col{
+  margin:15px;
+}
+.boxes{
+  display: flex;
+  border: solid .75px rgba(0,0,0,0.5);
+  width: 550px;
+  height: 325px;
+  margin-bottom: 30px;
+}
+.articleImage{
+  /* border: solid 1px red; */
+  width: 210px;
+  object-fit: cover;
+}
+
+.articleTitle{
+  /* border: solid 1px blue; */
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 15px;
+  width: 340px;
+  height: 90px;
+}
+.articleDes{
+  /* border: solid 1px orange; */
+  color: grey;
+  padding: 10px;
+  width: 340px;
+  height: 100px;
+}
+.authorContainer{
+  display: flex;
+}
+.authorImage{
+  /* border: solid 1px green; */
+  width: 75px;
+  height: 70px;
+  object-fit: cover;
+}
+.authorName{
+  /* border: solid 1px grey; */
+  margin-left: 5px;
+  font-weight: bold;
+  padding: 5px;
+  width: 225px;
+  height: 70px;
+}
+.bookMark{
+  /* border: solid 1px grey; */
+  width: 33px;
+}
+/* CSS Styles for MissedIt section */
+.mContainer{
+  border: solid 1px black;
+}
+.row{
+  display: flex;
+  justify-content: center;
+}
+.mBoxes{
+  border: solid .75px grey;
+  width: 350px;
+  height: 250px;
+  margin: 15px;
+}
+.mArticleImage{
+  /* border: solid 1px red; */
+  width: 350px;
+  height: 80px;
+  object-fit: cover;
+}
+.mArticleTitle{
+  /* border: solid 1px blue; */
+  font-size: 1.3em;
+  font-weight: bold;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.mArticleDes{
+  /* border: solid 1px orange; */
+  padding: 3px;
+  height: 45px;
+  color: grey;
+}
+
