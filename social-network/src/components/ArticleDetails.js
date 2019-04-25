@@ -1,4 +1,5 @@
 import React from 'react';
+import './ArticleDetails.css';
 
 class ArticleDetails extends React.Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class ArticleDetails extends React.Component {
 
   render() {
     return (
-        <div>
+        <div className="name-date">
           <h4>{ this.props.name }</h4>
           <h5>{ new Intl.DateTimeFormat('en-us',{
             month:'short', 

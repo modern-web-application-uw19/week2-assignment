@@ -1,12 +1,36 @@
-.article-grid__container {
+.article-grid__container-column {
+  flex: 0 0 33.333%;
+  max-width: 33.333%;
   padding: 15px;
+}
+.article-grid__container-row {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 15px;
+}
+.article.flex-row > div {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.article.flex-row .article__image {
+  max-height: 100%;
 }
 .article-image_wrapper {
   overflow: hidden;
 }
 .article {
+  height: 100%;
   max-height: 320px;
   border-radius: 5px;
   border: 1px solid rgba(0,0,0,.18);
   overflow: hidden;
+}
+.article.flex-column .article-image_wrapper img {
+  width: 100%;
+}
+.article.flex-column .article-image_wrapper {
+  max-height: 110px;
+}
+.article.flex-column > div:last-child {
+  min-height: calc(100% - 110px);
 }

@@ -1,0 +1,16 @@
+.name-date {
+  margin-left: 10px;
+}
+.name-date h4,
+.name-date h5 {
+  margin: 0 0 6px;
+  color: rgba(0,0,0,.54);
+  font-weight: 400;
+}
+
+.name-date h4 {
+  font-size: 14px;
+}
+.bookmark {
+  justify-self: flex-end;
+}

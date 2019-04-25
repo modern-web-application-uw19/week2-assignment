@@ -1,4 +1,5 @@
 import React from 'react';
+import ArticleFeatures from './ArticleFeatures';
 
 class Summary extends React.Component {
   constructor(props) {
@@ -8,8 +9,9 @@ class Summary extends React.Component {
   render() {
     return (
       <div>
-        <h3>{this.props.title}</h3>
-        <p>{this.props.description}</p>
+        <ArticleFeatures hasAudioAvailable={this.props.article.hasAudioAvailable} isMemberPreview={this.props.article.memberPreview} />
+        <h3 className="mt-2">{this.props.article.title}</h3>
+        <p>{this.props.article.description}</p>
       </div>
     );
   }

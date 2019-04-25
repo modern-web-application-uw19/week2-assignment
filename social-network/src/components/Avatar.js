@@ -1,5 +1,6 @@
 import React from 'react';
 import './Avatar.css';
+import halo from '../assets/halo.svg';
 
 class Avatar extends React.Component {
   constructor(props) {
@@ -9,8 +10,12 @@ class Avatar extends React.Component {
   render() {
     return (
       <div className="avatar">
-        <img className={this.props.isMember ? "member-avatar" : "" } src={this.props.src}/>
+        <img src={this.props.src}/>
+        <div className={this.props.isMember ? "member-avatar" : "d-none" }>
+          <img src={halo} alt="Medium Member"/>
+        </div>
       </div>
+
     )
   }
 }
