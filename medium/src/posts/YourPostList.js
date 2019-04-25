@@ -7,11 +7,9 @@ import '../styles/PostCard.css';
 class PostList extends Component {
   render() {
     return (
-      <div>
-       
+      <ul>
         {PostData.map((postDetail, index)=>{
-            return<div className="Columns">
-
+            return<li key={index} className="Columns">
             <div className="PostCard">
                 <img src={postDetail.image} alt="img" className="PostCardImage"></img>
                 <div className="PostCardContent">
@@ -27,10 +25,10 @@ class PostList extends Component {
                   />
                 </div>
                 </div>
-                </div>
+                </li>
         })}
        
-      </div>
+      </ul>
     );
   }
 }

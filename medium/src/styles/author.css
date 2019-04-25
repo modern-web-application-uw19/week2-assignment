@@ -16,11 +16,12 @@
   }
   
   .Container span {
-    font-size: 14px;
+    font-size: 12px;
     margin: 0 10px 0 0;
   }
   .Container p {
-    font-size: 14px;
+    font-size: 12px;
+    color: rgb(105, 98, 98);
   }
   
   @media (max-width: 500px) {

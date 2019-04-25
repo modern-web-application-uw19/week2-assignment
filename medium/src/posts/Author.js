@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
 import '../styles/author.css';
 
+import PropTypes from 'prop-types';
 
 
 export default class Author extends Component {
-    render() {
-
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    minutesToRead: PropTypes.number,
+    image: PropTypes.string.isRequired,
+}
+render() {
+    
+    
       const datePosted = this.props.postedDate;
 
         // get the date posted and format it to match screenshot
         function formatDate(date) {
             const newDate = new Date(datePosted);
             const day = newDate.getDate();
-
             const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
             const monthNum = newDate.getMonth();
             const month = months[monthNum];
@@ -32,4 +38,10 @@ export default class Author extends Component {
     }
   }
   
+  // Author.propTypes = {
+  //   name: PropTypes.string,
+  //   minutesToRead: PropTypes.number,
+  //   postedDate: PropTypes.string
+  
+  // }
  

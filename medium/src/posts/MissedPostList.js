@@ -4,13 +4,15 @@ import Author from './Author';
 import '../styles/author.css';
 import '../styles/MissedPosts.css';
 
+
 class PostList extends Component {
+
   render() {
     return (
-      <div >
+      <ul>
         
         {PostData.map((postDetail, index)=>{
-            return<div className="grid">
+            return<li key={index} className="grid">
             <div className="MissedCard">
                 <img src={postDetail.image} alt="img" className="MissedCardImage"></img>
                 <div className="MissedCardContent">
@@ -26,10 +28,10 @@ class PostList extends Component {
                 />
                   </div>
                   </div>
-                </div>
+                </li>
         })}
        
-      </div>
+      </ul>
     );
   }
 }
