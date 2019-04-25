@@ -27,7 +27,7 @@ export default class ForYouSection extends React.Component {
         
         return(            
             <div id="ForYouSection">                
-                <h5 style= {{borderBottom : "1px solid rgb(125, 125, 125)", padding: 20}}>For You</h5>
+                <h5 style= {{ borderBottom : "1px solid rgb(125, 125, 125)", padding: 20, width: "90%"}}>For You</h5>
                 
                 <CardDeck>
                     {articleCards[0]}

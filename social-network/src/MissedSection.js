@@ -24,7 +24,7 @@ export default class MissedSection extends React.Component {
         
         return(            
             <div id="MissedSection">                
-                <h5 style= {{borderBottom : "1px solid rgb(125, 125, 125)", padding: 20}}>In case you missed it</h5>
+                <h5 style= {{borderBottom : "1px solid rgb(125, 125, 125)", padding: 20, width: "90%"}}>In case you missed it</h5>
                 
                 <CardDeck>
                     {articleCards}                    
