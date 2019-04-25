@@ -24,6 +24,7 @@
   border-radius: 5px;
   border: 1px solid rgba(0,0,0,.18);
   overflow: hidden;
+  cursor: pointer;
 }
 .article.flex-column .article-image_wrapper img {
   width: 100%;
