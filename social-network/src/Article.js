@@ -27,7 +27,7 @@ class Article extends React.Component {
                     </span>
                     <span>
                         <div className="card">
-                            <div>{this.props.title ? 'Audio available' : ''}</div>
+                            <div>{this.props.title ? '🔊 Audio available' : ''}</div>
                             <div className="b">{this.props.title}</div>
                             <div>{this.props.description}</div>
                             <div><Author 
