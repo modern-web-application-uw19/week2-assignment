@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../styles/author.css';
-
 import PropTypes from 'prop-types';
 
 
@@ -37,11 +36,3 @@ render() {
       );
     }
   }
-  
-  // Author.propTypes = {
-  //   name: PropTypes.string,
-  //   minutesToRead: PropTypes.number,
-  //   postedDate: PropTypes.string
-  
-  // }
- 
