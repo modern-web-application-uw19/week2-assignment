@@ -1,0 +1,52 @@
+.indivArt
+{
+    width: 40%;
+    height:400px;
+    min-width: 250px;
+    float: left;
+    margin: 15px;
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+
+.missedArticle
+{
+    width: 30%;
+    height:400px;
+    min-width: 250px;
+    float: left;
+    margin: 15px;
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+.articleImageDiv
+{
+    width: 40%;
+    height:100%;
+    min-width: 250px;
+    float: left;
+    margin-left: 15px;
+    padding: 15px;
+}
+.articleContentDiv
+{
+    height:100%;
+}
+.articleImage
+{
+    max-width: 100%;
+    max-height: 100%;
+}
+.authorImage
+{
+    max-width: 30px;
+    max-height: 30px;
+    float:left;
+}
+
+.authorDiv
+{
+    vertical-align: bottom;
+    max-width: 100%;
+    max-height: 40px;
+}
