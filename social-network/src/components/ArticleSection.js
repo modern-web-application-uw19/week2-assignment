@@ -13,7 +13,7 @@ class ArticleSection extends React.Component {
     return (
       <div className="article-block">
         <SectionHeader title={ this.props.sectionTitle }/>
-        <div className={`article-grid d-flex flex-row flex-wrap`}>
+        <div className={`article-grid row d-flex flex-row flex-wrap`}>
           {this.props.articles.map((article, index) => (
             <Article 
               article={article} 

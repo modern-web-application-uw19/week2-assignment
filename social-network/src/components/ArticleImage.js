@@ -7,9 +7,7 @@ class ArticleImage extends React.Component {
 
   render() {
     return (
-      <div>
-        <img className="article__image" src={ this.props.src } alt={this.props.title}/>
-      </div> 
+      <img className="article__image" src={ this.props.src } alt={this.props.title}/>
     )
   }
 }

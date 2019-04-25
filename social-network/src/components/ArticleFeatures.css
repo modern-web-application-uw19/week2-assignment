@@ -14,3 +14,6 @@
   opacity: .54;
   margin: 0 8px 0 0;
 }
+.article__features h4 {
+  margin: 0;
+}
