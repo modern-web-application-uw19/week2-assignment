@@ -1,0 +1,132 @@
+h1 {
+  font-size: 1em;
+  border-bottom: 1px solid #c9cac9;
+}
+
+h1 span {
+  border-bottom: 1px solid #1d1b1b;
+}
+
+a { 
+  text-decoration: none; 
+  color: #1d1b1b;
+}
+
+img { 
+  width: 100%; 
+  height: auto; 
+}
+
+.allArticles {
+  display: grid;
+  grid-template-rows: auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+#articles {
+  margin: 30px;
+}
+
+#yourArticles {
+  grid-template-columns: 1fr 1fr;
+}
+
+#yourArticles .articleTitle, #yourArticles .articleDescription, #yourArticles .articleInfo {
+  grid-column: 2;
+}
+
+#yourArticles .article a {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  padding-right: 30px;
+}
+
+#yourArticles .articleImage {
+  grid-column: 1;
+  grid-row: 1 / span 4;
+  margin-right: 3em;
+}
+
+#yourArticles .articleImage img {
+  object-fit: cover;
+  width: 200px;
+  height: 250px;
+}
+
+#missedArticles {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#missedArticles .article .articleTitle, #missedArticles .article .articleDescription, #missedArticles .articleInfo {
+  padding: 0 10px;
+}
+
+#missedArticles .articleImage img {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+}
+
+#missedArticles .articleInfo { 
+  padding-bottom: 20px; 
+}
+
+#missedArticles .articleTitle, #missedArticles .articleDescription { 
+  margin-bottom: 10px; 
+}
+
+.article {
+  border: 1px solid #c9cac9;
+}
+
+.articleInfo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.authorImage {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: center;
+}
+
+.authorImage img { 
+  width: 30px;
+  height: 30px;
+  padding: 7px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.articleInfo .authorName {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+}
+
+.datePosted {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 0.7em;
+}
+
+.articleInfo .meta {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.articleInfo .authorName, .articleInfo .meta {
+  font-size: 0.9em;
+}
+
+.article .title {
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+.article .articleDescription {
+  font-size: 0.9em;
+}
