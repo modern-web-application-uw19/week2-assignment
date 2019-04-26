@@ -1,0 +1,169 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 20px;
+    margin-bottom:20px;
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+
+}
+
+.wrapper-missed {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    overflow-x: auto;
+    white-space: nowrap;
+
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.box {
+    border: 1px solid #E5E8E8;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-radius: 5px;
+    padding: 1px;
+    font-size: 75%;
+    height: 250px;
+
+}
+
+.article-image {
+    grid-column: 1 ;
+    grid-row: 1;
+}
+
+.article-img {
+    border-radius: 4px;
+    padding: 5px;
+    width: 350px;
+
+}
+
+.article-grid {
+    background-color: #fff;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 40%;
+    font-size: 100%;
+    text-align: left;
+}
+
+.article-details {
+    grid-column: 1;
+    grid-row: 1;
+    height: 150px;
+}
+
+
+.author-details-grid {
+    background-color: #fff;
+    color: #fff;
+    display: grid;
+    grid-column: 1 ;
+    grid-row: 2;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 1fr;
+    font-size: 100%;
+    text-align: left;
+}
+
+.author-img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+
+.post-details-grid {
+    background-color: #fff;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 50px;
+    font-size: 100%;
+    
+    text-align: left;
+}
+
+
+.author-name {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.read-detail {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.authorimg {
+    border-radius: 50%;
+    padding: 5px;
+    max-width:100%;
+    max-height:100%;  
+}
+
+.authorimg.mediumMember {
+    border: 1px solid teal;
+  }
+
+
+h2{
+    color:black;
+}
+
+h3{
+    color:black;
+}
+
+p{
+    color:gray;
+}
+
+hr {
+    border-top: 2px solid #E5E7E9;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
