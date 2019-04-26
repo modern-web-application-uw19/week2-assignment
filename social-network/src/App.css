@@ -1,0 +1,67 @@
+.grid-two-columns {
+  display: grid;
+  grid-template-columns: 600px 600px
+}
+
+.grid-three-columns {
+  display: grid;
+  grid-template-columns: 400px 400px 400px
+}
+
+.Article {
+  border: 1px solid lightgray;
+  border-radius: 1px;
+  max-width: 500px;
+  margin: 20px;
+  padding: 0px 20px 20px 0px;
+}
+
+.Image {
+  float: left;
+  padding: 0 20px 20px 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ImageYourArticles {
+  max-width: 250px;
+  max-height: 500px;
+  float: left;
+}
+
+.ImageMissedArticles {
+  max-width: 500px;
+  max-height: 100px;
+  vertical-align: top; 
+}
+
+[class*="AuthorImage"] {
+  float: left;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 40px;
+  margin: 10px;
+ }
+
+ .AuthorImageBorder {
+  border-color: green;
+  border-width: 2px;
+  border-style: solid;
+ }
+
+ .Bookmark {
+  float: right;
+  background-color: white;
+ }
+ 
+ .BookmarkToggled {
+  background-color: green;
+ }
+
+ .Speaker {
+   max-width: 15px;
+ }
+
+ h1 {
+   padding: 10px;
+ }
