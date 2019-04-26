@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+p {
+  font-size: .75em;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 40% 10% 15% 15% 20%;
+  grid-template-rows: 7fr;
+  width: 47%;
+  margin: 10px;
+  border: 1px solid black;
+}
+
+.card-img {
+  grid-column: 1;
+  grid-row: 1 / 7;
+  width: 100%;
+  height: 275px;
+}
+
+.card-title {
+  grid-column: 2 / 6;
+  grid-row: 1;
+  margin: 5% 0 0 5%;
+}
+
+.card-description {
+  grid-column: 2 / 6;
+  grid-row: 2;
+  margin: 0 0 5% 5%;
+}
+
+.author-img {
+  grid-column: 2;
+  grid-row: 5;
+  margin: 5% 0 5% 15%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.author-name {
+  grid-column: 3 / 5;
+  grid-row: 5;
+  margin: 5% 0 5% 15%;
+  text-align: left;
+}
+
+.card-date {
+  grid-column: 3;
+  grid-row: 5;
+  margin: 30% 0 5% 15%;
+}
+
+.card-read {
+  grid-column: 4;
+  grid-row: 5;
+  margin: 30% 0 5% 5%;
+}
+
+.missed-card {
+  display: grid;
+  grid-template-columns: 15% 3fr 50%;
+  grid-template-rows: 35% 25% 20% 20%;
+  width: 90%;
+  margin: 10px;
+  border: 1px solid black;
+  }
+
+.missed-card-img {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  width: 100%;
+  height: 200px;
+  }
+
+  .missed-card-title {
+    grid-column: 1 / 5;
+    grid-row: 2;
+    margin: 10% 0 0 5%;
+  }
+  
+  .missed-card-description {
+    grid-column: 1 / 5;
+    grid-row: 3;
+    margin: 5% 5% 5% 5%;
+  }
+
+  .missed-author-img {
+    grid-column: 1;
+    grid-row: 4 / 5;
+    margin-bottom: 5%;
+    margin-left: 15%;
+    border-radius: 100%;
+    width: 100%;
+  }
+
+  .missed-author-name {
+    grid-column: 2 / 3;
+    grid-row: 4;
+    margin: 5% 0 0 15%;
+    text-align: left;
+  }
+  .missed-card-date {
+    grid-column: 2;
+    grid-row: 4;
+    margin: 20% 0 5% 15%;
+    text-align: left;
+  }
+  
+  .missed-card-read {
+    grid-column: 2;
+    grid-row: 4;
+    text-align: right;
+    margin: 20% 0 5% 10%;
+  }
