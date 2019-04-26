@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Bookmark from './Bookmark';
 import './MissedItCard.css';
 
-export default class MissedItCard extends React.Component {
+class MissedItCard extends React.Component {
 
   render() {
 
@@ -26,3 +26,5 @@ export default class MissedItCard extends React.Component {
     );
   }
 }
+
+export default MissedItCard;

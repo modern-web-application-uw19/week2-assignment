@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
+import "./CompTmpl.css";
 
-export default class __ extends React.Component {
+class CompTmpl extends Component {
 
   render() {
-
     return (
       <div>
-        <p>In __</p>
+        <p>In CompTmpl</p>
       </div>
     );
   }
 }
+
+export default CompTmpl;

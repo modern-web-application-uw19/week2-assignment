@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import "./MemberPreview.css";
 
-export default class MemberPreview extends React.Component {
+class MemberPreview extends React.Component {
 
   render() {
 
@@ -11,3 +12,5 @@ export default class MemberPreview extends React.Component {
     );
   }
 }
+
+export default MemberPreview;

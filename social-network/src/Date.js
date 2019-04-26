@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import "./Date.css";
 
-export default class Date extends React.Component {
+export default class Date extends Component {
 
   render() {
-
     return (
       <div>
         <p>In Date</p>
@@ -11,3 +11,5 @@ export default class Date extends React.Component {
     );
   }
 }
+
+export default Date;

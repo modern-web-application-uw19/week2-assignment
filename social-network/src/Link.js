@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import "./Link.css";
 
-export default class Link extends React.Component {
+class Link extends React.Component {
 
   render() {
 
@@ -11,3 +12,5 @@ export default class Link extends React.Component {
     );
   }
 }
+
+export default Link;

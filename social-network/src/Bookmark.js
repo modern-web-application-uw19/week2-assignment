@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import "./Bookmark.css";
 
-export default class Bookmark extends React.Component {
+class Bookmark extends React.Component {
 
   render() {
-
     return (
       <div>
         <p>In Bookmark</p>
@@ -11,3 +11,5 @@ export default class Bookmark extends React.Component {
     );
   }
 }
+
+export default Bookmark;

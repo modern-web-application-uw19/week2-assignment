@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import "./Description.css";
 
-export default class Description extends React.Component {
+class Description extends Component {
 
   render() {
-
     return (
       <div>
         <p>In Description</p>
@@ -11,3 +11,5 @@ export default class Description extends React.Component {
     );
   }
 }
+
+export default Description;

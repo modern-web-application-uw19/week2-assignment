@@ -7,7 +7,7 @@ todo:
 if ({this.props.hasAudioAvailable}), above the title, show speaker icon and "Audio available"
 */
 
-export default class ForYouCard extends React.Component {
+class ForYouCard extends Component {
 
   render() {
 
@@ -31,3 +31,5 @@ export default class ForYouCard extends React.Component {
     );
   }
 }
+
+export default ForYouCard;

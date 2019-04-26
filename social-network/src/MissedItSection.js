@@ -3,7 +3,7 @@ import MissedItCard from './MissedItCard';
 import missedArticles from './missed-articles.json';
 import './MissedItSection.css';
 
-export default class MissedItSection extends React.Component {
+class MissedItSection extends React.Component {
 
   render() {
     const missedItCards = missedArticles
@@ -31,3 +31,5 @@ export default class MissedItSection extends React.Component {
     );
   }
 }
+
+export default MissedItSection;

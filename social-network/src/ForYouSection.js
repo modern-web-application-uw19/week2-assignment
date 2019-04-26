@@ -3,7 +3,7 @@ import ForYouCard from './ForYouCard';
 import yourArticles from './your-articles.json';
 import './ForYouSection.css';
 
-export default class ForYouSection extends React.Component {
+class ForYouSection extends Component {
 
   render() {
     const forYouCards = yourArticles
@@ -31,3 +31,5 @@ export default class ForYouSection extends React.Component {
     );
   }
 }
+
+export default ForYouSection;
