@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Bookmark from './Bookmark';
+// import Bookmark from './Bookmark';
+import Footer from './Footer';
 import './ForYouCard.css';
 
 /* 
@@ -20,12 +21,13 @@ class ForYouCard extends Component {
           <p>title: {this.props.title}</p>
           <p>description: {this.props.description}</p>
 
-          <p>author.isMediumMember: {this.props.author.isMediumMember.toString()}</p>
+          <Footer author={this.props.author} postedDate={this.props.postedDate} minutesToRead={this.props.minutesToRead}/>
+          {/* <p>author.isMediumMember: {this.props.author.isMediumMember.toString()}</p>
           <img src={this.props.author.image}/>
           <p>author.name: {this.props.author.name}</p>
           <p>postedDate: {this.props.postedDate}</p>
           <p>{this.props.minutesToRead} min read</p>
-          <Bookmark/>
+          <Bookmark/> */}
         </a>
       </div>
     );

@@ -1,0 +1,11 @@
+.bookmark {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.bookmark--green {
+  background-color: green;
+}
