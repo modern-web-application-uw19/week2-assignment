@@ -1,0 +1,71 @@
+.forYouArticles ul {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    display: block;
+    position: relative;
+    padding: 0;
+}
+
+.forYouArticles ul li {
+    width: 47%;
+    height: 230px;
+    float: left;
+    position: relative;
+    display: block;
+    margin: 1%;
+    background-color: #fff;
+    border: solid 1px #f2f2f2;
+    text-align: left;
+}
+
+.forYouArticles .content {
+    width: 60%;
+    float: right;
+    padding: 0 15px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.forYouArticles h3 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #3e3e3e;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.forYouArticles h4 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #7d7d7d;
+    margin: 0;
+}
+
+.forYouArticles .imgContainer {
+    width: 40%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    float: left;
+}
+
+.authorContainer {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+.authorImg { 
+    height: 40px;
+    width: 40px;
+    float: left;
+    padding-right: 10px;
+}
+
+.authorImg img {
+    border-radius: 30px;
+}
+
