@@ -15,9 +15,10 @@ export default class MissedArticles extends React.Component {
         const articlesMissed = this.state.articles.map( (art, idx) => <ArticleItem article={art} key={idx} />);
         return (
             <div>
-                <article className="article-missed">
+                <section className="article-missed">
+                    <h1>In case you missed it</h1>
                     {articlesMissed}
-                </article>
+                </section>
             </div>
         );        
     }

@@ -12,15 +12,15 @@ export default class YourArticles extends React.Component {
     }
     
     render() {
-        const articlesYours = this.state.articles.map( (art, idx) => 
-            <ArticleItem article={art} key={idx} />
+        const articlesYours = this.state.articles.map( (art, idx) => <ArticleItem article={art} key={idx} />
         );
     
         return (
             <div>
-                <article className="article-yours">
+                <section className="article-yours">
+                    <h1>For you</h1>
                     {articlesYours}
-                </article>
+                </section>
             </div>
         );        
     }
