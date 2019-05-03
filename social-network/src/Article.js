@@ -1,4 +1,5 @@
 import React  from 'react';
+import PropTypes from 'prop-types';
 
 export default class Article extends React.Component {
 
@@ -13,3 +14,8 @@ render() {
 }
 
 }
+
+Article.propTypes = {
+    description: PropTypes.string,
+    title: PropTypes.string
+};

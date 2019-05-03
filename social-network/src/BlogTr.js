@@ -1,6 +1,7 @@
 import React  from 'react';
 import Article from './Article';
 import AuthorBio from './AuthorBio';
+import PropTypes from 'prop-types';
 
 export default class BlogTr extends React.Component {
 
@@ -27,3 +28,9 @@ export default class BlogTr extends React.Component {
     }
 
 }
+
+BlogTr.propTypes = {
+    image: PropTypes.object,
+    description: PropTypes.string,
+    title: PropTypes.string
+};

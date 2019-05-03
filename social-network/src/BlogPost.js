@@ -3,7 +3,7 @@ import missedArticles_data from './_data/missed-articles.json';
 import yourArticle_data from './_data/your-articles.json';
 import BlogTr from './BlogTr';
 import FillerHtml from './FillerHtml';
-
+import PropTypes from 'prop-types';
 
 export default class BlogPost extends React.Component {
 
@@ -44,3 +44,8 @@ export default class BlogPost extends React.Component {
     }
 
 }
+
+BlogPost.propTypes = {
+    yourArticles: PropTypes.object,
+    missedArticles: PropTypes.object
+};

@@ -1,4 +1,5 @@
 import React  from 'react';
+import PropTypes from 'prop-types';
 
 export default class AuthorBio extends React.Component {
 
@@ -37,4 +38,11 @@ render() {
     );
 }
 
+
 }
+
+AuthorBio.propTypes = {
+    postedDate: PropTypes.string,
+    minutesToRead: PropTypes.string,
+    isMediumMember: PropTypes.bool
+};
