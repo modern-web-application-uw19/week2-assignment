@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import SocialNetwork from './SocialNetwork.js';
-import missedArticles from './missed-articles.json';
+
 
 class App extends Component {
   render() {

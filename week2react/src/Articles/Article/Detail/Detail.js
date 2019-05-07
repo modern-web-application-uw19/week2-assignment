@@ -10,13 +10,13 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 
 class Detail extends React.Component {
-    constructor(props) {
-      super(props);
-    }
+    // constructor(props) {
+    //   super(props);
+    // }
   
     render() {
       return (
-      <div className="">
+      <div className="detail">
           <p>Detail.js</p>
           <p>-Avatar</p>
           <p>-Medium Member Highlight (optional)</p>

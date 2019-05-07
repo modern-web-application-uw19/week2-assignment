@@ -19,19 +19,20 @@ import Detail from './Detail/Detail.js';
 
 
 class Article extends React.Component {
-    constructor(props) {
-      super(props);
-    }
-  
+    // constructor(props) {
+    //   super(props);
+    // }
+
     render() {
       return (
-      <div className="">
-          <p>Article.js</p>
-          <Image />
-          <Features />
-          <Summary />
-          <Detail />
-      </div>
+        <a className="article" href={this.props.article.link}>
+            <h4>Article.js</h4>
+
+            <Image article={this.props.article} />
+            <Features article={this.props.article} />
+            <Summary article={this.props.article} />
+            <Detail article={this.props.article} />
+        </a>
   
       )
     }
