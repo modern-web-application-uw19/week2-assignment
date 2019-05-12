@@ -1,6 +1,6 @@
 .article {
-    border-style: solid;
-    border-color:forestgreen;
+    /* border-style: solid;
+    border-color:forestgreen; */
     margin: 4px;
     width: 48%;
     display: flex;
@@ -27,12 +27,12 @@ img.image {
     justify-content: space-between;
     /* align-items: flex-start; */
     align-content: space-between;
-    height:100%;
+    height:auto;
     max-width: 55%;
     /* max-height:  */
     /* max-height: 15rem; */
-    border-style:ridge;
-    border-color: #FF00FF
+    /* border-style:ridge;
+    border-color: #FF00FF */
 }
 
 img.sub-article {
@@ -47,17 +47,11 @@ a.sub-article {
 }
 
 .article-info.sub-article {
-    width:100%;
-    border-style:ridge;
-    border-color: red;
-}
-
-a {
-    border-style: solid;
-    border-color:pink;
-    margin: 4px;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    /* width: 50%; */
+    max-width:100%;
+    height:auto;
+    /* border-style:ridge;
+    border-color: red; */
+    /* align-content: flex-start;
+    align-items: flex-start; */
+    justify-content: flex-start;
 }
