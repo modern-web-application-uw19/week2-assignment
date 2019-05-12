@@ -1,5 +1,6 @@
 import React from 'react';
 import Articles from './Articles/Articles.js';
+import './SocialNetwork.css'
 import yourArticles from  './your-articles.json';
 import missedArticles from  './missed-articles.json';
 
@@ -42,8 +43,8 @@ class SocialNetwork extends React.Component {
         return (
             <div className="social-network">
 
-                <Articles articles={yourArticles} title="For you" type="your"/>
-                <Articles articles={missedArticles} title="In case you missed it" type="missed"/>
+                <Articles articles={yourArticles} title="For you" type="your-articles"/>
+                <Articles articles={missedArticles} title="In case you missed it" type="missed-articles"/>
 
             </div>
         );

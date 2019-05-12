@@ -1,0 +1,32 @@
+.main-articles, .articles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+}
+
+.main-articles {
+    border-style: ridge;
+    border-color:orange;
+    margin: 2px 6px;
+    padding: 6px;
+
+}
+
+.qqq{
+    text-align: left;
+    width: 100%;
+    padding: 24px 0;
+    border-bottom: 1.5px solid lightgray;
+    /* border-width: 3px; 
+    border-style: solid;  */
+    /* border-image:linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%; */
+}
+
+.articles{
+/* border: 5px solid salmon; */
+width: 100%;
+display: flex;
+flex-flow: row wrap;
+}
+

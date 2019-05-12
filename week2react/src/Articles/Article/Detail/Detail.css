@@ -1,0 +1,70 @@
+.detail {
+    text-align: left;
+    padding: 4px 4px;
+    width: 100%;
+    max-height: 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: unset;
+    justify-content: center; 
+    /* border-style: solid;  */
+    /* align-content: center;
+    /* border-color: red;
+    border-style: solid; */
+
+}
+
+.detail-info {
+    display: flex;
+    flex-flow: column;
+    /* justify-content: flex-start; */
+    align-items: stretch;
+    /* align-content: flex-start; */
+    width: 100%;
+    padding: 0 0px;
+    align-content: center;
+    justify-content: center;
+    /* border-color: blue;
+    border-style: solid; */
+
+}
+
+.detail .avatar {
+    border-radius: 50%;
+    width: auto;
+    max-height: 3rem;
+}
+
+.detail .medium-member {
+    border: solid;
+    border-color: lightgreen;
+    border-radius: 50%;
+    padding: 5px;
+    min-width: 4em;
+    min-height: 4em;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.posted-info{
+    color: gray;
+    display: flex;
+    flex-flow: row wrap;
+
+    /* align-self: flex-start  */
+}
+
+.posted-info p {
+    font-size: 0.7rem;
+}
+p.name {
+    font-size: 0.9rem;
+}
+
+.bookmark {
+ padding: 6px;
+ align-self: flex-start;
+ /* border-color: green;
+ border-style: solid; */
+}

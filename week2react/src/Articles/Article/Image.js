@@ -6,10 +6,10 @@ class Image extends React.Component {
     //   super(props);
     // }
   
-
     render() {
       return (
-        <img className="image" 
+        <img     className = {(this.props.type==="your-articles" ? "image main-article" : "image sub-article")}
+ 
           src={this.props.article.image} 
           alt={this.props.article.title}
           height="200"
