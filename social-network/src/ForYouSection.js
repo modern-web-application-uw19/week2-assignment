@@ -1,15 +1,21 @@
 import React, { Component } from 'react';
 import ForYouCard from './ForYouCard';
 import yourArticles from './your-articles.json';
+import './ForYouSection.css';
 
 class ForYouSection extends Component {
 
   render() {
     const sectionStyle = {
-      backgroundColor: "blue",
-      width: "80%"
+      backgroundColor: "yellow",
+      width: "90%"
     }
 
+    const hrStyle = {
+      width: "50%",
+      borderWidth: "20px"
+    }
+    
     const forYouCards = yourArticles
     .map((article, idx) => {
         return (
@@ -30,8 +36,13 @@ class ForYouSection extends Component {
 
     return (
       <div style={sectionStyle}>
-        <h1>For you</h1>
-        {forYouCards}
+        <div style={hrStyle}>
+          <h1>For you</h1>
+        </div>
+        <hr></hr>
+        <div className="flex-container">
+          {forYouCards}
+        </div>
       </div>
     );
   }

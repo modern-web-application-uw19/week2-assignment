@@ -6,6 +6,7 @@ import Title from './Title';
 import Description from './Description';
 import Footer from './Footer';
 import PropTypes from 'prop-types';
+import MemberPreview from './MemberPreview';
 
 class MissedItCard extends Component {
 
@@ -27,8 +28,9 @@ class MissedItCard extends Component {
 
   render() {
     const cardStyle = {
-      backgroundColor: "green",
-      width: "80%"
+      backgroundColor: "red",
+      width: "400px",
+      height: "400px"
     };
   
     return (
@@ -36,7 +38,7 @@ class MissedItCard extends Component {
         <Link link={this.props.link}/>
         <Image image={this.props.image}/>
         <Audio hasAudioAvailable={this.props.hasAudioAvailable}/>
-        <p>memberPreview: {this.props.memberPreview.toString()}</p>
+        <MemberPreview memberPreview={this.props.memberPreview}/>
         <Title title={this.props.title}/>
         <Description description={this.props.description}/>
         <Footer author={this.props.author} postedDate={this.props.postedDate} minutesToRead={this.props.minutesToRead}/>

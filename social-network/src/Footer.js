@@ -4,6 +4,7 @@ import AuthorBio from './AuthorBio';
 import Date from './Date';
 import Minutes from './Minutes';
 import Bookmark from './Bookmark';
+import { isAbsolute } from 'path';
 
 class Footer extends Component {
 
@@ -19,7 +20,11 @@ class Footer extends Component {
 
   render() {
     const footerStyle = {
-      backgroundColor: "green"
+      backgroundColor: "green",
+      // verticalAlign: "text-bottom"
+      // position: "relative",
+      width: "100%",
+      // bottom: "0"
     }
 
     return (

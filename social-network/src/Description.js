@@ -7,9 +7,13 @@ class Description extends Component {
   }
 
   render() {
+    const descStyle = {
+      fontSize: "9pt"
+    }
+
     return (
       <div>
-        <p>{this.props.description}</p>
+        <p style={descStyle}>{this.props.description}</p>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import PropTypes from 'prop-types';
+import './Image.css';
 
 class Image extends Component {
 
@@ -9,7 +10,10 @@ class Image extends Component {
 
   render() {
     const imageStyle = {
-      width: "50%"
+      width: "100%",
+      // height: "100%",
+      float: "left",
+      overflow: "hidden"
     };
 
     return (

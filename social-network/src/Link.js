@@ -8,10 +8,13 @@ class Link extends Component {
   }
 
   render() {
+    const linkStyle = {
+      fontSize: "9pt"
+    }
 
     return (
       <div>
-        <p><a href={this.props.link}>{this.props.link}</a></p>
+        <p style={linkStyle}><a href={this.props.link}>Link</a></p>
       </div>
     );
   }

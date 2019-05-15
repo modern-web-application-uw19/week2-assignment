@@ -9,7 +9,8 @@ class Title extends Component {
 
   render() {
     const titleStyle = {
-      fontWeight: "bold"
+      fontWeight: "bold",
+      fontSize: "11pt"
     }
 
     return (

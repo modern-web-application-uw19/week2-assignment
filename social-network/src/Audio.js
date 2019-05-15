@@ -8,10 +8,14 @@ export default class Audio extends Component {
   }
 
   render() {
+    const audioStyle = {
+      fontSize: "9pt"
+    }
+
     const audio = () => {
       if (this.props.hasAudioAvailable) {
         return (
-          <p>Audio available</p>
+          <p style={audioStyle}>Audio available</p>
           );
       }
     }

@@ -6,6 +6,8 @@ import Title from './Title';
 import Description from './Description';
 import Footer from './Footer';
 import PropTypes from 'prop-types';
+import MemberPreview from './MemberPreview';
+import './ForYouCard.css';
 
 class ForYouCard extends Component {
 
@@ -28,18 +30,26 @@ class ForYouCard extends Component {
   render() {
     const cardStyle = {
       backgroundColor: "red",
-      width: "80%"
+      width: "400px",
+      height: "300px",
+      margin: "8px"
     };
 
     return (
       <div style={cardStyle}>
-        <Link link={this.props.link}/>
-        <Image image={this.props.image}/>
-        <Audio hasAudioAvailable={this.props.hasAudioAvailable}/>
-        <p>memberPreview: {this.props.memberPreview.toString()}</p>
-        <Title title={this.props.title}/>
-        <Description description={this.props.description}/>
-        <Footer author={this.props.author} postedDate={this.props.postedDate} minutesToRead={this.props.minutesToRead}/>
+        <div className="row">
+          <div className="column">
+            <Image image={this.props.image}/>
+          </div>
+          <div className="column2">
+            <Link link={this.props.link}/>
+            <Audio hasAudioAvailable={this.props.hasAudioAvailable}/>
+            <MemberPreview memberPreview={this.props.memberPreview}/>
+            <Title title={this.props.title}/>
+            <Description description={this.props.description}/>
+            <Footer author={this.props.author} postedDate={this.props.postedDate} minutesToRead={this.props.minutesToRead}/>
+          </div>
+        </div>
       </div>
     );
   }
