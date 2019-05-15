@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import "./MemberPreview.css";
 
 class MemberPreview extends React.Component {
 

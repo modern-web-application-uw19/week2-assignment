@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
-import "./Title.css";
+import PropTypes from 'prop-types';
 
-class Title extends React.Component {
+class Title extends Component {
+
+  static propTypes = {
+    title: PropTypes.string.isRequired
+  }
 
   render() {
+    const titleStyle = {
+      fontWeight: "bold"
+    }
+
     return (
       <div>
-        <p>In Title</p>
+        <p style={titleStyle}>{this.props.title}</p>
       </div>
     );
   }

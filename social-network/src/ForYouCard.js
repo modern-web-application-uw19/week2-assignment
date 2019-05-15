@@ -1,34 +1,45 @@
 import React, { Component } from 'react';
-// import Bookmark from './Bookmark';
+import Link from './Link';
+import Image from './Image';
+import Audio from './Audio';
+import Title from './Title';
+import Description from './Description';
 import Footer from './Footer';
-import './ForYouCard.css';
-
-/* 
-todo: 
-if ({this.props.hasAudioAvailable}), above the title, show speaker icon and "Audio available"
-*/
+import PropTypes from 'prop-types';
 
 class ForYouCard extends Component {
 
+  static propTypes = {
+    link: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+    hasAudioAvailable: PropTypes.bool.isRequired,
+    memberPreview: PropTypes.bool.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    author: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      isMediumMember: PropTypes.bool.isRequired
+    }),
+    postedDate: PropTypes.string.isRequired,    // "2018-03-27T07:00:00.000Z"
+    minutesToRead: PropTypes.number.isRequired
+  }
+
   render() {
+    const cardStyle = {
+      backgroundColor: "red",
+      width: "80%"
+    };
 
     return (
-      <div className="forYouCard">
-        <a href={this.props.link}>{this.props.link}<br/>
-          <img src={this.props.image}/>
-          <p>hasAudioAvailable: {this.props.hasAudioAvailable.toString()}</p>
-          <p>memberPreview: {this.props.memberPreview.toString()}</p>
-          <p>title: {this.props.title}</p>
-          <p>description: {this.props.description}</p>
-
-          <Footer author={this.props.author} postedDate={this.props.postedDate} minutesToRead={this.props.minutesToRead}/>
-          {/* <p>author.isMediumMember: {this.props.author.isMediumMember.toString()}</p>
-          <img src={this.props.author.image}/>
-          <p>author.name: {this.props.author.name}</p>
-          <p>postedDate: {this.props.postedDate}</p>
-          <p>{this.props.minutesToRead} min read</p>
-          <Bookmark/> */}
-        </a>
+      <div style={cardStyle}>
+        <Link link={this.props.link}/>
+        <Image image={this.props.image}/>
+        <Audio hasAudioAvailable={this.props.hasAudioAvailable}/>
+        <p>memberPreview: {this.props.memberPreview.toString()}</p>
+        <Title title={this.props.title}/>
+        <Description description={this.props.description}/>
+        <Footer author={this.props.author} postedDate={this.props.postedDate} minutesToRead={this.props.minutesToRead}/>
       </div>
     );
   }

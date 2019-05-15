@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import "./Minutes.css";
 
-export default class Minutes extends React.Component {
+class Minutes extends Component {
 
   render() {
 
     return (
       <div>
-        <p>In Minutes</p>
+        <p>{this.props.minutes} min read</p>
       </div>
     );
   }

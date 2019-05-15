@@ -1,30 +1,30 @@
 import React from 'react';
-import "./AuthorBio.css";
+import PropTypes from 'prop-types';
 
 class AuthorBio extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      todos: []
-      // newTodo: ''
-    };
-  }
 
+  static propTypes = {
+    author: PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      isMediumMember: PropTypes.bool.isRequired
+    }),
+  }
+  
   render() {
+    const authorBioStyle = {
+      backgroundColor: "purple",
+      width: "80%"
+    }
     return (
-      <div>
-        <label htmlFor="new-todo">Add Todo</label>
-        <input
-          id="new-todo"
-          onChange={this.onChange}
-          value={this.state.newTodo}
-        />
-        <button onClick={this.addTodo}>Add</button>
-        <ul>
-          {}
-        </ul>
+      <div style={authorBioStyle}>
+        <p>isMediumMember: {this.props.author.isMediumMember.toString()}</p>
+        <img src={this.props.author.image} alt="author"/>
+        <p>{this.props.author.name}</p>
       </div>
     );
   }
 
 }
+
+export default AuthorBio;

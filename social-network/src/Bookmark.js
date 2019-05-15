@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./Bookmark.css";
+import './Bookmark.css';
 
 class Bookmark extends Component {
 
@@ -11,6 +11,7 @@ class Bookmark extends Component {
   }
 
   toggleBookmark = () => {
+    console.log("in toggleBookmark");
     this.setState(prevState => {
       return {
         isSelected: !prevState.isSelected
@@ -20,13 +21,13 @@ class Bookmark extends Component {
 
   render() {
     // if (this.state.isSelected) {
-    // return <div className="bookmark bookmark--green" onClick={this.toggleBookmark}></div>
+    // return <div className="bookmark bookmark--orange" onClick={this.toggleBookmark}></div>
     // }
 
     // return (
     // <div className="bookmark" onClick={this.toggleBookmark}></div>
     // )
-    const classes = this.state.isSelected ? 'bookmark bookmark--green' : 'bookmark';
+    const classes = this.state.isSelected ? 'bookmark bookmark--orange' : 'bookmark';
 
     return <div className={classes} onClick={this.toggleBookmark}></div>
   }

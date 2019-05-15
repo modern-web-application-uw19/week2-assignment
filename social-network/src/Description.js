@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import "./Description.css";
+import PropTypes from 'prop-types';
 
 class Description extends Component {
+  static propTypes = {
+    description: PropTypes.string.isRequired
+  }
 
   render() {
     return (
       <div>
-        <p>In Description</p>
+        <p>{this.props.description}</p>
       </div>
     );
   }

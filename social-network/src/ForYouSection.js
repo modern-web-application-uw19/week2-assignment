@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import ForYouCard from './ForYouCard';
 import yourArticles from './your-articles.json';
-import './ForYouSection.css';
 
 class ForYouSection extends Component {
 
   render() {
+    const sectionStyle = {
+      backgroundColor: "blue",
+      width: "80%"
+    }
+
     const forYouCards = yourArticles
     .map((article, idx) => {
         return (
@@ -19,12 +23,13 @@ class ForYouSection extends Component {
             minutesToRead={article.minutesToRead} 
             hasAudioAvailable={article.hasAudioAvailable} 
             memberPreview={article.memberPreview} 
+            key={idx}
             />
           );
     });
 
     return (
-      <div className="forYouSection">
+      <div style={sectionStyle}>
         <h1>For you</h1>
         {forYouCards}
       </div>
