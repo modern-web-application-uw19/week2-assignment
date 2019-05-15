@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import AuthorBio from './AuthorBio';
-import Date from './Date';
-import Minutes from './Minutes';
+import AuthorImage from './AuthorImage';
+// import Date from './Date';
+// import Minutes from './Minutes';
 import Bookmark from './Bookmark';
-import { isAbsolute } from 'path';
+import "./Footer.css";
 
 class Footer extends Component {
 
@@ -18,21 +18,43 @@ class Footer extends Component {
     minutesToRead: PropTypes.number.isRequired
   }
 
+  indicateMediumMember (flag) {
+    if (flag) {
+      return <p>_____</p>
+    } else {
+      return null
+    }
+  }
+
   render() {
     const footerStyle = {
       backgroundColor: "green",
-      // verticalAlign: "text-bottom"
-      // position: "relative",
-      width: "100%",
-      // bottom: "0"
+      fontSize: "8pt"
+    }
+
+    const authorNameStyle = {
+      fontWeight: "bold"
     }
 
     return (
       <div style={footerStyle}>
-        <AuthorBio author={this.props.author}/>
-        <Date postedDate={this.props.postedDate}/>
-        <Minutes minutes={this.props.minutesToRead}/>
-        <Bookmark/>
+        <div className="row">
+          <div className="footerColumn">
+            {this.indicateMediumMember(this.props.author.isMediumMember)}
+            <AuthorImage author={this.props.author}/>
+          </div>
+          <div className="footerColumn2">
+            <div>
+              <p style={authorNameStyle}>{this.props.author.name}</p>
+            </div>
+            <p>{this.props.postedDate} &#183; {this.props.minutesToRead} min read</p>
+            {/* <Date postedDate=/>
+            <Minutes minutes=/> */}
+          </div>
+          <div className="footerColumn3">
+            <Bookmark/>
+          </div>
+        </div>
       </div>
     );
   }

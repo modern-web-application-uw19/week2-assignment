@@ -32,7 +32,7 @@ class ForYouCard extends Component {
       backgroundColor: "red",
       width: "400px",
       height: "300px",
-      margin: "8px"
+      margin: "8px",
     };
 
     return (
@@ -47,7 +47,10 @@ class ForYouCard extends Component {
             <MemberPreview memberPreview={this.props.memberPreview}/>
             <Title title={this.props.title}/>
             <Description description={this.props.description}/>
-            <Footer author={this.props.author} postedDate={this.props.postedDate} minutesToRead={this.props.minutesToRead}/>
+
+            <div className="footer">
+              <Footer author={this.props.author} postedDate={this.props.postedDate} minutesToRead={this.props.minutesToRead}/>
+            </div>
           </div>
         </div>
       </div>

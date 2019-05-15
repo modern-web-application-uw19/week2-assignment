@@ -9,8 +9,9 @@ export default class Date extends Component {
   // }
   
   render() {
+    let myDate = new Date(this.props.postedDate)
     // const myDate = new Date();
-    // console.log(myDate);
+    console.log(myDate);
 
     // "ERROR: getMonth() IS NOT A FUNCTION: "
     // const month = myDate.getMonth();

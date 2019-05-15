@@ -3,14 +3,26 @@ import './App.css';
 import ForYouSection from './ForYouSection';
 import MissedItSection from './MissedItSection';
 
+const forYouSectionStyle = {
+  marginTop: "35px"
+}
+
+const missedItSectionStyle = {
+  marginTop: "35px"
+}
+
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <ForYouSection/>
-        <MissedItSection/>
+        <div style={forYouSectionStyle}>
+          <ForYouSection/>
+        </div>
+        <div style={missedItSectionStyle}>
+          <MissedItSection/>
+        </div>
       </div>
-  );
+    );
   }
 }
 

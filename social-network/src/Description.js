@@ -8,7 +8,7 @@ class Description extends Component {
 
   render() {
     const descStyle = {
-      fontSize: "9pt"
+      fontSize: "8.5pt"
     }
 
     return (

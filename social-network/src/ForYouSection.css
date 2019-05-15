@@ -2,3 +2,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+h1 {
+  font-size: 10.5pt;
+}
+
+p {
+  font-size: 8pt;
+}
