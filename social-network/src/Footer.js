@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import AuthorImage from './AuthorImage';
-// import Date from './Date';
-// import Minutes from './Minutes';
+import PostedDate from './PostedDate';
+import Minutes from './Minutes';
 import Bookmark from './Bookmark';
 import "./Footer.css";
 
@@ -28,8 +28,9 @@ class Footer extends Component {
 
   render() {
     const footerStyle = {
-      backgroundColor: "green",
-      fontSize: "8pt"
+      // backgroundColor: "green",
+      verticalAlign: "bottom"
+      // fontSize: "18pt"
     }
 
     const authorNameStyle = {
@@ -47,9 +48,8 @@ class Footer extends Component {
             <div>
               <p style={authorNameStyle}>{this.props.author.name}</p>
             </div>
-            <p>{this.props.postedDate} &#183; {this.props.minutesToRead} min read</p>
-            {/* <Date postedDate=/>
-            <Minutes minutes=/> */}
+            {/* <p>{this.props.postedDate}  {this.props.minutesToRead} min read</p> */}
+            <p><PostedDate postedDate={this.props.postedDate}/> &#183; <Minutes minutesToRead={this.props.minutesToRead}/></p>
           </div>
           <div className="footerColumn3">
             <Bookmark/>

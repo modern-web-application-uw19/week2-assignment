@@ -29,9 +29,12 @@ class ForYouCard extends Component {
 
   render() {
     const cardStyle = {
-      backgroundColor: "red",
+      // backgroundColor: "red",
+      borderStyle: "solid",
+      borderColor: "#e7e7e7", 
+      borderWidth: "1px",
       width: "400px",
-      height: "300px",
+      height: "250px",
       margin: "8px",
     };
 

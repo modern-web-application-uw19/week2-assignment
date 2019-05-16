@@ -7,13 +7,8 @@ class ForYouSection extends Component {
 
   render() {
     const sectionStyle = {
-      backgroundColor: "yellow",
+      // backgroundColor: "yellow",
       width: "90%"
-    }
-
-    const hrStyle = {
-      width: "50%",
-      borderWidth: "20px"
     }
     
     const forYouCards = yourArticles
@@ -36,9 +31,7 @@ class ForYouSection extends Component {
 
     return (
       <div style={sectionStyle}>
-        <div style={hrStyle}>
-          <h1>For you</h1>
-        </div>
+        <h1>For you</h1>
         <hr></hr>
         <div className="flex-container">
           {forYouCards}

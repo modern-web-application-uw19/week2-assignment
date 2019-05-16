@@ -6,7 +6,7 @@
 
 .footerColumn2 {
   float: left;
-  width: 45%;
+  width: 65%;
 }
 
 .footerColumn3 {
@@ -19,4 +19,8 @@
   content: "";
   display: table;
   clear: both;
+}
+
+p {
+  font-size: 8pt;
 }

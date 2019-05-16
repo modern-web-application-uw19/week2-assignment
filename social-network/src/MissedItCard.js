@@ -28,9 +28,10 @@ class MissedItCard extends Component {
 
   render() {
     const cardStyle = {
-      backgroundColor: "red",
+      // backgroundColor: "red",
       width: "400px",
-      height: "400px"
+      height: "400px",
+      margin: "8px",
     };
   
     return (

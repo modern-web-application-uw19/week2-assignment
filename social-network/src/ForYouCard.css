@@ -1,12 +1,13 @@
 .column {
   float: left;
-  width: 45%;
+  width: 40%;
   margin-right: 13px;
 }
 
 .column2 {
-  float: left;
-  width: 45%;
+  /* float: left; */
+  width: 54%;
+  display: inline-block;
 }
 
 /* Clear floats after the columns */
@@ -17,7 +18,9 @@
 }
 
 .footer {
-  width: 107%;
-  display: inline-block;
-  vertical-align: top;
+  /* position: absolute;  */
+  /* bottom: 0; */
+  /* width: 100%; */
+  /* display: inline-block;
+  vertical-align: bottom; */
 }

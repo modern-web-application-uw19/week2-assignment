@@ -7,7 +7,7 @@ class MissedItSection extends Component {
 
   render() {
     const sectionStyle = {
-      backgroundColor: "yellow",
+      // backgroundColor: "yellow",
       width: "90%"
     }
 
