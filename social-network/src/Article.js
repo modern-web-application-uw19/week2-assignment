@@ -36,17 +36,15 @@ export default class Article extends React.Component {
                     {article.memberPreview ? <i className="fa fa-star" /> : null}
                     <h3>{article.title}</h3>
                     <p>{article.description}</p>
-                    <div className="Article__author">
-                        <div>
+                    <div className="Article__footer">
+                        <div className="Article__author">
                             <img src={article.author.image} alt={article.author.name} />
-                            <div>
-                                <div>{article.author.name}</div>
-                                <div>{this.getFormattedDate()} &#8226; {article.minutesToRead} min read</div>
+                            <div className="Article__author-details">
+                                <div className="Article__author-name">{article.author.name}</div>
+                                <div className="Article__article-details">{this.getFormattedDate()} &#8226; {article.minutesToRead} min read</div>
                             </div>
                         </div>
-                        <div>
-                            <i className="far fa-bookmark" />
-                        </div>
+                        <i className="Article__bookmark far fa-bookmark" />
                     </div>
                 </div>
             </div>
