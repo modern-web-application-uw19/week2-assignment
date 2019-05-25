@@ -1,0 +1,25 @@
+.Article {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid lightgrey;
+    margin: 10px;
+}
+
+.Article__main-image {
+    width: 50%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.Article__content {
+    padding: 1em;
+}
+
+.Article__content h3 {
+    margin-top: 0;
+}
+
+.Article__author img {
+    border-radius: 50%;
+}
