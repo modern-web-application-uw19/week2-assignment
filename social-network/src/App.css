@@ -4,7 +4,9 @@
   max-width: 1200px;
   margin-left: 30px;
 }
-
+/* .boxesRow{
+  display: flex;
+} */
 /* CSS Styles for ForYou section */
 .container{
   display: flex;
@@ -56,7 +58,7 @@
   font-weight: bold;
   padding: 5px;
   width: 225px;
-  height: 70px;
+  height: auto;
 }
 .bookMark{
   /* border: solid 1px grey; */

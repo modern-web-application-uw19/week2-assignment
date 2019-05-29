@@ -1,18 +1,16 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
-import ForYou from './ForYou';
-import MissedIt from './MissedIt';
+import forYou from './your-articles.json';
+import missedIt from './missed-articles.json';
+import ArticleBox from './articleBox.js';
 
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h4>For you</h4>
-        <ForYou />
-        <h4>In case you missed it</h4>
-        <MissedIt />
+      <div>
+        <ArticleBox className="" title="For You" articles={forYou} />
+        <ArticleBox className="" title="In case you missed it" articles={missedIt} />
       </div>
       
     );
