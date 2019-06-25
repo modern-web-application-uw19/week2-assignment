@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import AuthorImage from './AuthorImage';
 import CreateDate from './CreateDate';
-
 import PropTypes from 'prop-types';
 
 class MissedArticlesCard extends Component {
@@ -21,6 +20,8 @@ class MissedArticlesCard extends Component {
     postedDate: PropTypes.string.isRequired,   
     minutesToRead: PropTypes.number.isRequired
   }
+
+//basically a duplicate of the yourArticles.js - should have made it more modular!
 
   render() {
 

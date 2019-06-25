@@ -8,6 +8,8 @@ class YourArticles extends Component {
 
   render() {
     
+    //present articles one at a time
+
     const yourArticlesCards = yourArticles
     .map((article, idx) => {
         return (

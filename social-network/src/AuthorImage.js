@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import "./AuthorImage.css";
 
 export default class AuthorImage extends React.Component {
 
@@ -16,7 +15,7 @@ export default class AuthorImage extends React.Component {
 
     return (
       <div className="authImage">
-        <img src={this.props.author.image} alt="author"/>
+        <img src={this.props.author.image}/>
       </div>
   
     )

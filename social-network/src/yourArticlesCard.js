@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import AuthorImage from './AuthorImage';
 import CreateDate from './CreateDate';
-// import './ForYouCard.css';
 import PropTypes from 'prop-types';
 
 class YourArticlesCard extends Component {
@@ -18,12 +17,12 @@ class YourArticlesCard extends Component {
       image: PropTypes.string.isRequired,
       isMediumMember: PropTypes.bool.isRequired
     }),
-    postedDate: PropTypes.string.isRequired,    // "2018-03-27T07:00:00.000Z"
+    postedDate: PropTypes.string.isRequired,
     minutesToRead: PropTypes.number.isRequired
   }
 
   render() {
-
+    //toggle has audio tag
     const audio = () => {
         if (this.props.hasAudioAvailable) {
           return (
@@ -31,7 +30,7 @@ class YourArticlesCard extends Component {
             );
         }
       }
-
+      // format and return article data
     return (
       <div className="your-articles">
         <div className="row">
@@ -45,7 +44,7 @@ class YourArticlesCard extends Component {
                 <p><a href={this.props.link}>Link</a></p>
             </div>
             <div>
-                {audio()}
+                {audio()} // why does this throw errors when inline?
             </div>
             <div>
                 <p className="member-preview">* Member preview</p>
